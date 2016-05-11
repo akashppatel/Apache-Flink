@@ -24,7 +24,7 @@ public class EntryPoint {
 
 	public static void readHospitalAsCsv(ExecutionEnvironment env)
 			throws Exception {
-		CsvReader dataIn = env.readCsvFile("./data/hospitals_new.csv");//("file:///path/to/file");
+		CsvReader dataIn = env.readCsvFile("./data/input.csv");//("file:///path/to/file");
 
 		// dataIn.types(Class<Integer> id, Class<String> hospital, Class<String> , Class<String> , Class<String>);
 		DataSource<Tuple5<Long, String, String, String, String>> csvFields = 
@@ -47,9 +47,9 @@ public class EntryPoint {
 
 	public static void readHospitalAsText(ExecutionEnvironment env) {
 		//DataSet<String> data = env.readTextFile("C:\\akash\\flink\\example\\inputFile.txt");
-	    DataSet<String> data = env.readTextFile("./data/hospitals_new.csv");
+	    DataSet<String> data = env.readTextFile("./data/input.csv");
 
-	    //CsvReader dataIn = env.readCsvFile("C:\\akash\\flink\\example\\hospitals_new.csv");//("file:///path/to/file");
+	    //CsvReader dataIn = env.readCsvFile("C:\\akash\\flink\\example\\input.csv");//("file:///path/to/file");
 	
 	    // Create a DataStream from a list of elements
 	    /*DataSource <Integer> data = env.fromElements(1, 2, 3, 4, 5);
