@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.companyname</groupId>
+  <artifactId>my-flink-api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Apache Flink Based API</name>
+  <description>Sample project Apache-flink</description>
+  
+  <dependencies>
+  	<!-- Use this dependency if you are using the DataStream API -->
+	<dependency>
+	  <groupId>org.apache.flink</groupId>
+	  <artifactId>flink-streaming-java_2.10</artifactId>
+	  <version>1.0.1</version>
+	</dependency>
+  </dependencies>
+</project>
